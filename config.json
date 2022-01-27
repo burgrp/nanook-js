@@ -205,7 +205,8 @@
         "registers": "-> controller.registers",
         "writeEnabled": [
             "maxOutTemp",
-            "minInTemp"
+            "minInTemp",
+            "superheatTarget"
         ]
     },
     "web": {

@@ -36,6 +36,18 @@
                 "01-socket.io.js": "${workspaceFolder}../webglue/client/01-socket.io.js"
             },
             "url": "http://local.device.farm:8080"
+        },{
+            "name": "find-superheat",
+            "program": "${workspaceFolder}/utils/find-superheat.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "env": {
+                "MQTT": "10.1.0.12"
+            },
+            "type": "pwa-node",
+            "outputCapture": "std"
         }        
     ]
 }
