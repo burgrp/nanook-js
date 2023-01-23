@@ -2,15 +2,15 @@ version: "3.7"
 
 services:
   nanook:
-    container_name: nanook    
-    image: burgrp/nanook
+    container_name: nanook
+    image: burgrp/nanook@sha256:f53783b314789f6d49d5df5894b7fcf98ea8bf8e84364b47a7dd1fd8fc1143c5
     privileged: true
     init: true
     restart: always
     volumes:
       - "/dev:/dev"
       - "/data/nanook:/data"
-    environment: 
+    environment:
       HTTP_PORT: "80"
       I2C_BUS: "hw:0"
       DATA_DIR: "/data"

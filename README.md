@@ -11,7 +11,7 @@ docker run --rm --privileged docker/binfmt:820fdd95a9972a5308930a2bdfb8573dd4447
 
 Build the image
 ```shell
-docker buildx build --platform linux/arm/v7 . -t burgrp/nanook
+docker buildx build --platform linux/arm/v7 -t burgrp/nanook --load .
 docker push burgrp/nanook
 ```
 

@@ -119,11 +119,11 @@ module.exports = async config => {
             }
         }
 
-        checkRegister(registers.coldFrigoPressure, 0, 25);
-        checkRegister(registers.hotFrigoPressure, 0, 25);
+        checkRegister(registers.coldFrigoPressure, 0, 10);
+        checkRegister(registers.hotFrigoPressure, 0, 27);
         checkRegister(registers.psLow, true, true);
         checkRegister(registers.psHigh, true, true);
-        checkRegister(registers.hotFrigoInTemp, 0, 130);
+        checkRegister(registers.hotFrigoInTemp, 0, 145);
     }
 
     function isBlockedNow() {
