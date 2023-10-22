@@ -28,6 +28,14 @@ module.exports = async config => {
                     await config.controller.setHotWaterPump(state);
                 },
 
+                async setCompressorRelay(state) {
+                    await config.controller.setCompressorRelay(state);
+                },
+
+                async setCompressorRamp(ramp) {
+                    await config.controller.setCompressorRamp(ramp);
+                },
+
                 async eevRun(fullSteps, fast) {
                     await config.controller.eevRun(fullSteps, fast);
                 },

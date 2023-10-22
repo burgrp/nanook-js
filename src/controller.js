@@ -464,6 +464,14 @@ module.exports = async config => {
             await peripherals.setHotWaterPump(state);
         },
 
+        async setCompressorRelay(state) {
+            await peripherals.setCompressorRelay(state);
+        },
+
+        async setCompressorRamp(ramp) {
+            await peripherals.setCompressorRamp(ramp);
+        },
+
         async eevRun(fullSteps, fast) {
             await peripherals.eevRun(fullSteps, fast);
         },

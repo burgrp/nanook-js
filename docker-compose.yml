@@ -3,7 +3,7 @@ version: "3.7"
 services:
   nanook:
     container_name: nanook
-    image: burgrp/nanook@sha256:f53783b314789f6d49d5df5894b7fcf98ea8bf8e84364b47a7dd1fd8fc1143c5
+    image: burgrp/nanook@sha256:d9ed5dd0584becc2d1025cad492fb1174f7342b1bb6700eeb5b55dbacdc6d5b8
     privileged: true
     init: true
     restart: always
